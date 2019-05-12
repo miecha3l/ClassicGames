@@ -19,9 +19,9 @@ And maybe more!
 If you have processing you can download any source file and just run it via processing IDE. If you dont have processing you can download exported applications from links below! Have fun!
 
 ### Snake
-[Windows](https://drive.google.com/open?id=1AKfwnhJ1ts5v3HZ8sBrYTU6QDy3y1ZaR)
-[Linux](https://drive.google.com/open?id=1OuX8p7iIZtEXSlZWcNoMPKeL8xXCf1sJ)
+* [Windows](https://drive.google.com/open?id=1AKfwnhJ1ts5v3HZ8sBrYTU6QDy3y1ZaR)
+* [Linux](https://drive.google.com/open?id=1OuX8p7iIZtEXSlZWcNoMPKeL8xXCf1sJ)
 
 ### Tetris
-[Windows](https://drive.google.com/open?id=1J1--KHd5Kzanm2BkKUlM23yW0FMPRhuA)
-[Linux](https://drive.google.com/open?id=18ULLImNbNNjHW4ahzYaYEIObxLD2xTQ-)
+* [Windows](https://drive.google.com/open?id=1J1--KHd5Kzanm2BkKUlM23yW0FMPRhuA)
+* [Linux](https://drive.google.com/open?id=18ULLImNbNNjHW4ahzYaYEIObxLD2xTQ-)
