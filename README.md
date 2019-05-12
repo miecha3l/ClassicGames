@@ -1,16 +1,15 @@
 # Classic games
 This repo is summary of my current coding skills presented in a form of few classic games created by me from scratch using java based
-[Processing](https://processing.org/) IDE. Goal with every game was to create it in the most simple, straight forward way. Pure gameplay 
-without any interfaces or crazy features.
+[Processing](https://processing.org/) IDE. Goal with every game is to create it in the most simple, straight forward way. Pure gameplay without any interfaces or crazy features.
 
 ## Roadmap:
-* Tetris - DONE
-* Snake - DONE
-* SpaceInvaders - ...
-* Breakout - ...
-* Pacman - ...
-* Frogger - ...
-* Minesweeper - ...
+* Tetris - **DONE**
+* Snake - **DONE**
+* SpaceInvaders - *coming soon*
+* Breakout - *coming soon*
+* Pacman - *coming soon*
+* Frogger - *coming soon*
+* Minesweeper - *coming soon*
 
 And maybe more!
 
