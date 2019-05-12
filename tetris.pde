@@ -4,7 +4,6 @@ final char block[][] = {
   {' ', '*', '*', ' '},
   {' ', ' ', ' ', ' '}
 };
-color Bcol = #B40FCE;
 
 final char blockT[][] = {
   {' ', ' ', ' ', ' '},
@@ -12,7 +11,6 @@ final char blockT[][] = {
   {' ', '*', '*', ' '},
   {' ', '*', ' ', ' '}
 };
-color Tcol = #07A525;
 
 final char blockI[][] = {
   {' ', '*', ' ', ' '},
@@ -20,7 +18,6 @@ final char blockI[][] = {
   {' ', '*', ' ', ' '},
   {' ', '*', ' ', ' '}
 };
-color Icol = #ED880C;
 
 final char blockL[][] = {
   {' ', ' ', ' ', ' '},
@@ -28,7 +25,6 @@ final char blockL[][] = {
   {' ', '*', ' ', ' '},
   {' ', '*', '*', ' '}
 };
-color Lcol = #1A26EA;
 
 final char blockLL[][] = {
   {' ', ' ', ' ', ' '},
@@ -36,7 +32,6 @@ final char blockLL[][] = {
   {' ', ' ', '*', ' '},
   {' ', '*', '*', ' '}
 };
-color LLcol = #25AEB9;
 
 final char blockS[][] = {
   {' ', ' ', ' ', ' '},
@@ -44,7 +39,6 @@ final char blockS[][] = {
   {' ', '*', '*', ' '},
   {' ', ' ', '*', ' '}
 };
-color Scol = #C91212;
 
 final char blockZ[][] = {
   {' ', ' ', ' ', ' '},
@@ -52,7 +46,6 @@ final char blockZ[][] = {
   {' ', '*', '*', ' '},
   {' ', '*', ' ', ' '}
 };
-color Zcol = #EAE52F;
 
 /////////////////////////////////////////////////////////////////////////////////////////
 
@@ -69,19 +62,20 @@ class Tetrimino{
    for(int i = 0; i < 4; i++){
      for(int j = 0; j < 4; j++){
       switch(rand){
-       case 0: variant[j][i] = block[j][i]; col = Bcol; break;
-       case 1: variant[j][i] = blockI[j][i]; col = Icol; break;
-       case 2: variant[j][i] = blockT[j][i]; col = Tcol; break;
-       case 3: variant[j][i] = blockS[j][i]; col = Scol; break;
-       case 4: variant[j][i] = blockL[j][i]; col = Lcol; break;
-       case 5: variant[j][i] = blockLL[j][i]; col = LLcol; break;
-       case 6: variant[j][i] = blockZ[j][i]; col = Zcol; break;
+       case 0: variant[j][i] = block[j][i]; break;
+       case 1: variant[j][i] = blockI[j][i]; break;
+       case 2: variant[j][i] = blockT[j][i]; break;
+       case 3: variant[j][i] = blockS[j][i]; break;
+       case 4: variant[j][i] = blockL[j][i]; break;
+       case 5: variant[j][i] = blockLL[j][i]; break;
+       case 6: variant[j][i] = blockZ[j][i]; break;
       }
      }
    }
    dim = _dim;
    globalPos = new PVector((int)random(4,7), -1);
    piecesPos = new ArrayList<PVector>();
+   col = #5A39B7;
    
    for(int i = 0; i < 4; i++){
      for(int j = 0; j < 4; j++){
@@ -153,6 +147,7 @@ class Tetrimino{
    }
    
    fill(col);
+   noStroke();
    for(PVector piece : piecesPos) rect(dim.x * piece.x, dim.y * piece.y, dim.x, dim.y);
  }
  
@@ -176,7 +171,7 @@ void drawGrid(){
  for(int i = 0; i < wellSize.y; i++){
   for(int j = 0; j < wellSize.x; j++){
    fill(0,0,0,0);
-   stroke(0);
+   stroke(0,0,0, 50);
    rect(j * gridSize.x, i * gridSize.y, gridSize.x, gridSize.y);
   }
  }
@@ -184,8 +179,8 @@ void drawGrid(){
 
 void drawStack(){
  for(PVector b : stack) {
-   fill(255);
-   stroke(0);
+   fill(#5A39B7);
+   noStroke();
    rect(b.x * gridSize.x, b.y * gridSize.y, gridSize.x, gridSize.y);
  }
 }
@@ -246,17 +241,16 @@ void setup(){
 
 void draw(){  
   currentTick += tickrate;
-  background(90);
-  stroke(0);
-  fill(255);
+  background(200);
   
   boolean speed = keyPressed && key == 's' ? true : false;
   if(keyPressed && key == 'a') active.move(-1);
   if(keyPressed && key == 'd') active.move(1);
   
+  
+  drawStack();
   active.show();
   drawGrid();
-  drawStack();
   if(!active.update(speed)) active = new Tetrimino(gridSize);
   
   if(!checkRows()) {
