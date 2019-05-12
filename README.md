@@ -16,11 +16,10 @@ And maybe more!
 
 
 ## Want to play?
-If you have processing you can download any source file and just run it via processing IDE. If you dont have processing you can download exported applications from
-links below! Have fun!
+If you have processing you can download any source file and just run it via processing IDE. If you dont have processing you can download exported applications from links below! Have fun!
 
 ### Snake
-Download for linux: (link soon)
+Download for windows: (link soon)
 
 ### Tetris
 Download for windows: (link soon)
