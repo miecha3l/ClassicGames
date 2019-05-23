@@ -5,8 +5,8 @@ This repo is summary of my current coding skills presented in a form of few clas
 ## Roadmap:
 * Tetris - **DONE**
 * Snake - **DONE**
+* Breakout - **DONE**
 * SpaceInvaders - *coming soon*
-* Breakout - *coming soon*
 * Pacman - *coming soon*
 * Frogger - *coming soon*
 * Minesweeper - *coming soon*
@@ -25,3 +25,8 @@ If you have processing you can download any source file and just run it via proc
 ### Tetris
 * [Windows](https://drive.google.com/open?id=1J1--KHd5Kzanm2BkKUlM23yW0FMPRhuA)
 * [Linux](https://drive.google.com/open?id=18ULLImNbNNjHW4ahzYaYEIObxLD2xTQ-)
+
+### Breakout
+* Windows (link soon)
+* Linux (link soon) 
+

@@ -31,15 +31,19 @@ byte collision(){
   return 0;
 }
 
+void loadLevel(char[][] _layout){
+  for(int i = 0; i < 4; i++){
+   for(int j = 0; j < 8; j++){
+    if(_layout[i][j] == '*') level.add(new Brick(new PVector(j, i)));
+   }
+  }
+}
+
 void setup(){
   pad = new Pad();
   ball = new Ball();
   level = new ArrayList<Brick>();
-  for(int i = 0; i < 4; i++){
-   for(int j = 0; j < 8; j++){
-    if(layout[i][j] == '*') level.add(new Brick(new PVector(j, i)));
-   }
-  }
+  loadLevel(layout);
   size(800, 600);
 }
 
@@ -53,11 +57,17 @@ void draw(){
   
   byte collision = collision();
   
-  if(collision == -1) ball = new Ball();
-  else if(collision == 4 || collision ==5){
+  if(collision == -1){
+    ball = new Ball();
+    loadLevel(layout);
+  }
+  else if(collision == 4 || collision == 5){
     if(brokenBrick != -1){
       level.remove(brokenBrick); 
+      brokenBrick = -1;
     }
+    
+    if(level.size() == 0 ) loadLevel(layout);
   }
   
   pad.update(dir);
