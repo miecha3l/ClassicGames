@@ -6,9 +6,9 @@ This repo is summary of my current coding skills presented in a form of few clas
 * Tetris - **DONE**
 * Snake - **DONE**
 * Breakout - **DONE**
+* Frogger - **DONE**
 * SpaceInvaders - *coming soon*
 * Pacman - *coming soon*
-* Frogger - *coming soon*
 * Minesweeper - *coming soon*
 
 And maybe more!
@@ -27,6 +27,10 @@ If you have processing you can download any source file and just run it via proc
 * [Linux](https://drive.google.com/open?id=18ULLImNbNNjHW4ahzYaYEIObxLD2xTQ-)
 
 ### Breakout
+* Windows (link soon)
+* Linux (link soon) 
+
+### Frogger
 * Windows (link soon)
 * Linux (link soon) 
 
