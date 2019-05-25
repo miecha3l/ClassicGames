@@ -66,7 +66,7 @@ void spawnCar(int roadId){
  outer:
  do{
    for(Car c : cars){
-     if(nc.gridPos.y == c.gridPos.y){
+     if(nc.gridPos.y == c.gridPos.y && nc.dir.x != c.dir.x){
        y = roadId == 0 ? (int)random(12) : (int)random(12, 24);
        nc = new Car(3, y);
        continue outer;
@@ -107,12 +107,12 @@ void draw(){
    if(frog.gridPos.y < 0){
      frog = new Frog();
      score += 1;
-     if(score % 5 == 0) carsToSpawn <<= 1;
    }
    if(!updateCars()) {
      cars.clear();
      frog = new Frog();
      score = 0;
+     if(score % 5 == 0) carsToSpawn <<= 1;
    }
    if(currentTick % 500 == 0){
      //spawn new car on each road
