@@ -21,18 +21,18 @@ And maybe more!
 If you have processing you can download any source file and just run it via processing IDE. If you dont have processing you can download exported applications from links below! Have fun!
 
 ### Snake
-* [Windows](https://drive.google.com/open?id=1AKfwnhJ1ts5v3HZ8sBrYTU6QDy3y1ZaR)
-* [Linux](https://drive.google.com/open?id=1OuX8p7iIZtEXSlZWcNoMPKeL8xXCf1sJ)
+* [Windows](https://drive.google.com/open?id=1mSy0cIM6xlbBJVrK8nZhFwovI2eM4wm8)
+* [Linux](https://drive.google.com/open?id=1RHB2CXCGOjoDV6C2z0LMNadYUNTPOSZC)
 
 ### Tetris
-* [Windows](https://drive.google.com/open?id=1J1--KHd5Kzanm2BkKUlM23yW0FMPRhuA)
-* [Linux](https://drive.google.com/open?id=18ULLImNbNNjHW4ahzYaYEIObxLD2xTQ-)
+* [Windows](https://drive.google.com/open?id=1HDKxOpiaLmIq9HTbCYnsF-tZ70yR0-Mi)
+* [Linux](https://drive.google.com/open?id=1430iFmHP28jaf8FTAU56JNZh2AkSNe_w)
 
 ### Breakout
-* Windows (link soon)
-* Linux (link soon) 
+* [Windows] (https://drive.google.com/open?id=11zRlRxJj2jCnRG333sE8-OhWzfrjdUZY)
+* [Linux] (https://drive.google.com/open?id=1d9aFCzQczY11kI8-3VocuQdJWrfpBBiS) 
 
 ### Frogger
-* Windows (link soon)
-* Linux (link soon) 
+* [Windows] (https://drive.google.com/open?id=1zfD0MrsSxF6-AqdAs0DIw_5dEarrrf0k)
+* [Linux] (https://drive.google.com/open?id=1NNpWyKEvzV2tqZXDKvJuebVRbJjMHdGO) 
 
