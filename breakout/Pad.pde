@@ -6,7 +6,7 @@ class Pad{
  Pad(){
    pWidth = 100;
    pHeight = 10;
-   speed = 10;
+   speed = 15;
    pos = new PVector(width/2 - (pWidth/2), height - 50); 
  }
  

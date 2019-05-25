@@ -19,8 +19,8 @@ int tilesH;
 
 
 
-void initSnake(int length){
-    len = length;
+void initSnake(int _len){
+    len = _len;
     snakeHead = new PVector(5, 6);
     snakeBody = new ArrayList<PVector>();
     for(int i = 1; i < 4; i++) snakeBody.add(new PVector(snakeHead.x - i, snakeHead.y));
@@ -87,6 +87,9 @@ void draw(){
   
   fill(255, 0, 0);
   rect(apple.x * tile, apple.y * tile, tile, tile);
+  
+  textSize(16);
+  text("Score: " + (snakeBody.size() - 3), 10, 20); 
   
   if(currentTick >= tick){    
     snakeBody.add(0, new PVector(snakeHead.x, snakeHead.y)); //<>//

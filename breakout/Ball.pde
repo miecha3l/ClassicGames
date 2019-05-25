@@ -2,7 +2,7 @@ class Ball{
   PVector pos;
   float radius;
   PVector velocity;
-  float speed = 5.0f;
+  float speed = 10.0f;
   
   Ball(){
     pos = new PVector(width/2 - radius/2, height/2);

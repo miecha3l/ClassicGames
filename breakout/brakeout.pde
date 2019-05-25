@@ -2,10 +2,10 @@ Pad pad;
 Ball ball;
 ArrayList<Brick> level;
 char[][] layout = {
-   {'*', '*', '*', '*', '*', '*', '*', '*'},
-   {'*', '*', '*', '*', '*', '*', '*', '*'},
-   {'*', '*', '*', '*', '*', '*', '*', '*'},
-   {'*', '*', '*', '*', '*', '*', '*', '*'}
+   {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'},
+   {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'},
+   {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'},
+   {'*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*', '*'}
 };
 
 int brokenBrick = -1;
@@ -14,7 +14,7 @@ byte collision(){
   if(ball.pos.x <= 0 || ball.pos.x >= width) return 1;
   if(ball.pos.y <= 0) return 2;
   if(ball.pos.y > height) return -1;
-  if(ball.pos.x >= pad.pos.x && ball.pos.x <= pad.pos.x + pad.pWidth && ball.pos.y >= pad.pos.y && ball.pos.y <= pad.pos.y + 1) return 3;
+  if(ball.pos.x >= pad.pos.x && ball.pos.x <= pad.pos.x + pad.pWidth && ball.pos.y >= pad.pos.y && ball.pos.y <= pad.pos.y + 0.5f) return 3;
   for(Brick b : level){
     if(ball.pos.x >= b.pos.x && ball.pos.x <= b.pos.x + b.bWidth &&
        ball.pos.y >= b.pos.y && ball.pos.y <= b.pos.y + b.bHeight){
@@ -32,8 +32,9 @@ byte collision(){
 }
 
 void loadLevel(char[][] _layout){
+  level.clear();
   for(int i = 0; i < 4; i++){
-   for(int j = 0; j < 8; j++){
+   for(int j = 0; j < 12; j++){
     if(_layout[i][j] == '*') level.add(new Brick(new PVector(j, i)));
    }
   }
@@ -60,11 +61,11 @@ void draw(){
   if(collision == -1){
     ball = new Ball();
     loadLevel(layout);
+    brokenBrick = -1;
   }
   else if(collision == 4 || collision == 5){
     if(brokenBrick != -1){
       level.remove(brokenBrick); 
-      brokenBrick = -1;
     }
     
     if(level.size() == 0 ) loadLevel(layout);

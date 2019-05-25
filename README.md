@@ -11,6 +11,8 @@ This repo is summary of my current coding skills presented in a form of few clas
 * Pacman - *coming soon*
 * Minesweeper - *coming soon*
 
+* Hub kind off app allowing to launch any of those games so you dont need to download and manage them as separate games
+
 And maybe more!
 
 
